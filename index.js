@@ -113,21 +113,21 @@ header("9th question")
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
 
-
+header("11th question")
     function longestString(arr)
     {
       let maxStr = arr[0].length;
-      let string = arra[0];
+      let string = arr[0];
       for (let i = 1; i < arr.length; i++) {
           let maximum = arr[i].length;
-          if (maxi > max_str) {
-              ans = arra[i];
-              max_str = maxi;
+          if (maximum > maxStr) {
+              string = arr[i];
+              maxStr = maximum;
           }
       }
-      return ans;
+      return string;
   }
-  console.log(longest_str_in_array(["ab", "a", "abcd"]));
+  console.log(longestString(["a", "ab", "abd"]));
 
 /* 12. Create a function to find the types of a given angle:
   1. Acute angle â‡’ between 0 and 90 degrees. Return `acute`.
